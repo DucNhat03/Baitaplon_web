@@ -321,3 +321,13 @@
       margin-left: 850px;
       margin-top: 40px;
   }
+
+  #footer{
+    height: 865px;    
+    width: 100%;
+    display: flex;
+    position: absolute;
+    background-color: #2B324D;
+    margin-top: 2600px;
+    border: 2px solid black;
+  }
