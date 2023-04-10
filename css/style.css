@@ -84,7 +84,6 @@
     position: absolute;
     margin-top: 230px; 
     margin-right: 130px;
-    
   }
 
   .page01-txt1{
@@ -150,4 +149,42 @@
     display: flex;
     position: absolute;
     margin-left: 70px;
+    margin-top: 30px;
+  }
+
+  #page02{
+    height: 225px;
+    width: 1000px;
+    display: flex;
+    position: absolute;
+    margin-top: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .page02-left{
+    height: 225px;
+    width: 300px;
+  }
+
+  .page02-right{
+    height: 225px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    /* border: 2px solid black; */
+  }
+
+  .page02-right_button{
+    height: 50px;
+    width: 90%;
+    border-radius: 3px;
+    border: 1px solid rgb(218, 211, 211);
+    font-size: 13px;
+    background-color: white;
+    background-size: 35px; 
+    background-repeat: no-repeat; 
+    padding-left: 60px; 
+    background-position-x: 10%; 
+    background-position-y: 50%;
+    text-align: start;
   }
