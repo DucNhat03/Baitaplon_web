@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" type="image/png" href="../Image/LogoP.png" />
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js"></script>
+    <!--Add thư viện bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <title>Programiz: Learn to Code for Free</title>
   </head>
   <style>
@@ -14,38 +19,37 @@
   </style>
   <body>
     
-    <div id="container">
+    <div id="container-fluid">
       <!-- Header -->
       <div id="header">
         <div id="header-content">
-          <div class="header-content_discount">
-              <span>36%<br> <span>OFF</span></span>
-          </div>
+            <button class="header-content_discount" type="submit" onclick="openLink('https://pages.programiz.pro/java-interview-questions?&utm_source=top-banner-programiz-web&utm_medium=banner&utm_campaign=java-interview-release__top-banner-programiz-web__may')"><span>36%<br> <span>OFF</span></span> </button> 
           <h2 class="header-content_txt1">Learn coding interactively.</h2>
           <span class="header-content_txt2">
             Learn to code by doing<strong style="font-weight: 1000">. Try hands-on coding</strong> 
             with Programiz PRO.
-            <span style="font-weight: 1000; color: #0556f3 "> <ins>Claim Your Discount</ins> </span>
+          <span style="font-weight: 1000; color: #0556f3 " role="button" onclick="openLink('https://pages.programiz.pro/java-interview-questions?&utm_source=top-banner-programiz-web&utm_medium=banner&utm_campaign=java-interview-release__top-banner-programiz-web__may')"> <ins>Claim Your Discount</ins> </span>
           </span>
         </div>
 
         <!-- Menu-Center -->
         <div id="nav-menu">
-          <img src="../Image/LogoProgramiz.png" alt="LogoProgramiz" style="width: 90px; height: 30px;">
-          <select name="" id="" style="border: none; color: #6001DA;">
+          <img class="nav-menu-logo" src="../Image/LogoProgramiz.png" alt="LogoProgramiz" role="button" onclick="reLoad()">
+          <select name="" id="" style="border: none; color: #6001DA;" role="button">
             <option value="" >Courses</option> 
           </select>
-          <select name="" id="" style="border: none; opacity: 70%;">
+          <select name="" id="" style="border: none; opacity: 80%;" role="button">
             <option value="" >Tutorials</option> 
           </select>
-          <select name="" id="" style="border: none; opacity: 70%;">
+          <select name="" id="" style="border: none; opacity: 80%;" role="button">
             <option value="" >Examples</option> 
           </select>
-          <div>
+          <div id="nav-menu_gr-button">
             <button type="submit" id="nav-menu_button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <input type="text" placeholder="Search tutorials & examples" style="border: none; width: 170px;">
+            <input id="nav-menu_input" type="text" placeholder="Search tutorials & examples">
           </div>
         </div>
+
         <!-- PAGE01  -->
         <div id="page01" >
           <span class="page01-txt1">
@@ -55,8 +59,8 @@
           </span>
           <span class="page01-text3">Get the latest tutorials and updates</span>
           <div class="page01-text4" >
-            <input class="page01-text4-input" type="email" name="" id="" placeholder="Enter your email address">
-            <input class="page01-text4-Button" type="submit" value="Subscribe">
+            <input class="page01-text4-input" type="email" name="" id="" placeholder="&emsp;Enter your email address">
+            <input class="page01-text4-Button btn-primary" type="submit" value="Subscribe">
           </div>
           <div class="page01-image01">
             <img src="../Image/img1.png" alt="" class="page01-image01-img">
@@ -73,28 +77,28 @@
             </div>
             <div class="page02-right">
                 <div>
-                  <button class="page02-right_button" style="background-image: url(../Image/icon_PLanguages_Python.png); ">Python Programming</button>
+                  <button class="page02-right_button" onclick="openLink('https://www.programiz.com/python-programming')" style="background-image: url(../Image/icon_PLanguages_Python.png);">Python Programming</button>
                 </div>
                 <div>
-                  <button class="page02-right_button" style="background-image: url(../Image/icon_PLanguages_SQL.png); ">Learn SQL</button>
+                  <button class="page02-right_button" onclick="openLink('https://www.programiz.com/sql')" style="background-image: url(../Image/icon_PLanguages_SQL.png); ">Learn SQL</button>
                 </div>
                 <div>
-                  <button class="page02-right_button" style="background-image: url(../Image/icon_PLanguages_R.png); ">R Programming</button>
+                  <button class="page02-right_button" onclick="openLink('https://www.programiz.com/r')"  style="background-image: url(../Image/icon_PLanguages_R.png); ">R Programming</button>
                 </div>
                 <div>
-                  <button class="page02-right_button" style="background-image: url(../Image/icon_PLanguages_HTML.png); ">Learn HTML</button>
+                  <button class="page02-right_button" onclick="openLink('https://www.programiz.com/html')" style="background-image: url(../Image/icon_PLanguages_HTML.png); ">Learn HTML</button>
                 </div>
                 <div>
-                  <button class="page02-right_button" style="background-image: url(../Image/icon_PLanguages_JavaScript.png); ">JavaScript</button>
+                  <button class="page02-right_button" onclick="openLink('https://www.programiz.com/javascript')" style="background-image: url(../Image/icon_PLanguages_JavaScript.png); ">JavaScript</button>
                 </div>
                 <div>
-                  <button class="page02-right_button" style="background-image: url(../Image/icon_PLanguages_Java.png); ">Java Programming</button>
+                  <button class="page02-right_button" onclick="openLink('https://www.programiz.com/java-programming')" style="background-image: url(../Image/icon_PLanguages_Java.png); ">Java Programming</button>
                 </div>
                 <div>
-                  <button class="page02-right_button" style="background-image: url(../Image/icon_PLanguages_RustP.png); ">Rust Programming</button>
+                  <button class="page02-right_button" onclick="openLink('https://www.programiz.com/rust')" style="background-image: url(../Image/icon_PLanguages_RustP.png); ">Rust Programming</button>
                 </div>
                 <div>
-                  <button class="page02-right_button" style="background-image: url(../Image/icon_PLanguages_Go.png.png); ">Go Programming</button>
+                  <button class="page02-right_button" onclick="openLink('https://www.programiz.com/golang')" style="background-image: url(../Image/icon_PLanguages_Go.png.png); ">Go Programming</button>
                 </div>
                 <div>
                   <button class="page02-right_button" style="color: #0556f3; padding-left: 23px; font-size: 14px;">View all tutorials  <i class="fa-solid fa-arrow-right"></i> </button>
@@ -116,7 +120,7 @@
                   <button class="page03-content-button" >
                     <b>
                       Python Compiler<br>
-                      <span style="color: #2a6df3; ">Start Coding Python <i class="fa-solid fa-arrow-right"></i></span>
+                      <span style="color: #2a6df3;" role="button" onclick="openLink('https://www.programiz.com/python-programming/online-compiler/')">Start Coding Python <i class="fa-solid fa-arrow-right"></i></span>
                     </b> 
                   </button>
                 </div>
@@ -124,7 +128,7 @@
                   <button class="page03-content-button" >
                     <b>
                       SQL Editor<br>
-                      <span style="color: #2a6df3; ">Start Coding SQL <i class="fa-solid fa-arrow-right"></i></span>
+                      <span style="color: #2a6df3;" role="button" onclick="openLink('https://www.programiz.com/sql/online-compiler/')">Start Coding SQL <i class="fa-solid fa-arrow-right"></i></span>
                     </b> 
                   </button>
                 </div>
@@ -132,7 +136,7 @@
                   <button class="page03-content-button" >
                     <b>
                       HTML Editor<br>
-                      <span style="color: #2a6df3; ">Start Coding HTML <i class="fa-solid fa-arrow-right"></i></span>
+                      <span style="color: #2a6df3;" role="button" onclick="openLink('https://www.programiz.com/html/online-compiler/')">Start Coding HTML <i class="fa-solid fa-arrow-right"></i></span>
                     </b> 
                   </button>
                 </div>
@@ -140,7 +144,7 @@
                   <button class="page03-content-button" >
                     <b>
                       JS Editor<br>
-                      <span style="color: #2a6df3; ">Start Coding JS <i class="fa-solid fa-arrow-right"></i></span>
+                      <span style="color: #2a6df3;"role="button" onclick="openLink('https://www.programiz.com/javascript/online-compiler/')" >Start Coding JS <i class="fa-solid fa-arrow-right"></i></span>
                     </b> 
                   </button>
                 </div>
@@ -148,7 +152,7 @@
                   <button class="page03-content-button" >
                     <b>
                       Java Compiler<br>
-                      <span style="color: #2a6df3; ">Start Coding Java <i class="fa-solid fa-arrow-right"></i></span>
+                      <span style="color: #2a6df3; "role="button"  onclick="openLink('https://www.programiz.com/java-programming/online-compiler/')" >Start Coding Java <i class="fa-solid fa-arrow-right"></i></span>
                     </b> 
                   </button>
                 </div>
@@ -156,7 +160,7 @@
                   <button class="page03-content-button" >
                     <b>
                       C# Compiler<br>
-                      <span style="color: #2a6df3; ">Start Coding C# <i class="fa-solid fa-arrow-right"></i></span>
+                      <span style="color: #2a6df3; "role="button"  onclick="openLink('https://www.programiz.com/csharp-programming/online-compiler/')"  >Start Coding C# <i class="fa-solid fa-arrow-right"></i></span>
                     </b> 
                   </button>
                 </div>
@@ -164,7 +168,7 @@
                   <button class="page03-content-button" >
                     <b>
                       C Compiler<br>
-                      <span style="color: #2a6df3; ">Start Coding C <i class="fa-solid fa-arrow-right"></i></span>
+                      <span style="color: #2a6df3; "role="button"  onclick="openLink('https://www.programiz.com/c-programming/online-compiler/')" >Start Coding C <i class="fa-solid fa-arrow-right"></i></span>
                     </b> 
                   </button>
                 </div>
@@ -172,7 +176,7 @@
                   <button class="page03-content-button" >
                     <b>
                       C++ Compiler<br>
-                      <span style="color: #2a6df3; ">Start Coding C++ <i class="fa-solid fa-arrow-right"></i></span>
+                      <span style="color: #2a6df3; "role="button"  onclick="openLink('https://www.programiz.com/cpp-programming/online-compiler/')" >Start Coding C++ <i class="fa-solid fa-arrow-right"></i></span>
                     </b> 
                   </button>
                 </div>
@@ -243,15 +247,15 @@
               <div class="footer-content1" >
                   <img src="../Image/LogoProgramiz.png" alt="" class="footer-content1-img">
                   <div style="margin-top: 30px; font-size: 17px;">Join our newsletter for the latest updates.</div>
-                  <div style="margin-top: 20px;">
-                      <input class="footer-content1-input" type="email" name="" id="" placeholder="Enter your email address">
-                      <input class="footer-content1-button" type="submit" value="Join">
+                  <div id="footer-button-input" style="margin-top: 20px;">
+                      <input class="footer-content1-input" type="email" name="" id="" placeholder="&emsp;Enter your email address">
+                      <input class="footer-content1-button btn-primary" type="submit" value="Join">
                   </div>
                   <div>
-                      <img src="../Image/playstore.png" alt="" class="page04-left-img">
+                      <img src="../Image/playstore.png" alt="" class="page04-left-img" role="button" onclick="openLink('https://play.google.com/store/apps/dev?id=8227237868464522664&referrer=utm_campaign%3Dprogramiz-footer%26utm_source%3Dprogramiz-website')">
                   </div>
                   <div>
-                      <img src="../Image/AppStore.png" alt="" class="page04-left-img">
+                      <img src="../Image/AppStore.png" alt="" class="page04-left-img" role="button" onclick="openLink('https://apps.apple.com/us/developer/parewa-labs-pvt-ltd/id1472188188')">
                   </div>  
               </div>
               <div class="footer-content2" >
