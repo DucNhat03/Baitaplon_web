@@ -54,27 +54,52 @@
 
 /* menu  */
   #nav-menu{
-    width: 100%;
     width: 700px;
     display: flex;
     position: absolute;
     justify-content: space-between;
-    align-items: end;
-    font-size: 18px;
+    align-items: center;
+    font-size: 15px;
     margin-top: 120px;
     margin-right: 350px;
     font-family:  Arial;
+    /* border: 1px solid black; */
   }
-  
+
+  .nav-menu-logo{
+    width: 90px;
+    height: 30px;
+    position: relative;
+    top: -6px;
+  }
+
+  #nav-menu_gr-button{
+    opacity: 95%;
+    position: relative;
+    top: 10px;
+    left: -20px;
+  }
+
   #nav-menu_button{
-    width: 18px;
+    width: 19px;
     height: 18px;
     background-color: rgb(255, 255, 255);
     border: none;
     color: grey;
-    
+    font-size: 20px;
+    position: relative;
+    left: 4px;
+    top: -10px;
+    opacity: 70%;
   }
   
+  #nav-menu_input{
+    position: relative;
+    top: -12px;
+    left: 19px;
+    border: none; 
+    width: 210px
+  }
 
   #page01{
     width: 919px;
@@ -125,11 +150,12 @@
     border-top-left-radius: 5px;
     border: 1px solid rgb(155, 149, 149);
   }
-  
+  .page01-text4-input:active {  border: 1px solid #0556F3;}
+
   .page01-text4-Button{
     font-size: 15px;
     width: 111px;
-    height: 54px;
+    height: 50px;
     font-weight: bold;
     background-color: #0556F3;
     color: aliceblue;
@@ -183,6 +209,10 @@
     text-align: start;
     box-shadow: 1px 1px 1px 1px #d8d8d8;
   }
+  
+  .page02-right button:hover{
+    transform: scale(1.1);
+  }
 
   #page03{
     height: 225px;
@@ -211,10 +241,12 @@
     font-size: 35px;
     display: flex;
     position: absolute;
+    top: 20px;
   }
 
   p{
-    margin-top: 80px;
+    position: absolute;
+    top: 90px;
     font-size: 20px;
     opacity: 70%;
     width: 570px;
@@ -229,7 +261,7 @@
     gap: 20px;
     column-gap: 5px;
     position: absolute;
-    margin-top: 170px;
+    margin-top: 180px;
   }
   .page03-content-button{
     width: 85%;
@@ -278,7 +310,7 @@
   }
 
   .page04-left-img{
-    width: 120px;
+    width: 130px;
     height: 40px;
     margin-top: 20px;
   }
@@ -356,6 +388,14 @@
     filter: brightness(0) invert(1);           
     -webkit-filter: brightness(0) invert(1);
   }
+  #footer-button-input{
+    height: 50px;
+    width: 409px;
+    display: flex;
+    /* position: absolute;
+    margin-top: 325px; */
+  }
+
   .footer-content1-input{
     font-size: 15px;
     width: 200px;
@@ -368,14 +408,14 @@
   .footer-content1-button{
     font-size: 15px;
     width: 80px;
-    height: 60px;
+    height: 56px;
     font-weight: bold;
     background-color: #0556F3;
     color: aliceblue;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border-style: none;
-    margin-left: -3.9px;
+    margin-left: 0px;
   }
 
   .footer-content2{
