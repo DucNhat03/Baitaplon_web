@@ -188,30 +188,32 @@
   }
 
   .page02-right{
-    height: 225px;
-    width: 700px;
+    height: 250px;
+    width: 1340px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
   }
 
   .page02-right_button{
-    height: 50px;
-    width: 90%;
+    height: 59px;
+    width: 250px;
     border-radius: 3px;
     border: 1px solid rgb(218, 211, 211);
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 90%;
     background-color: white;
     background-size: 35px; 
     background-repeat: no-repeat; 
     padding-left: 60px; 
-    background-position-x: 10%; 
+    background-position-x: 7%; 
     background-position-y: 50%;
     text-align: start;
-    box-shadow: 1px 1px 1px 1px #d8d8d8;
+    box-shadow: 1px 0px 1px 1px #eeeded;
   }
   
   .page02-right button:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   #page03{
@@ -311,7 +313,7 @@
 
   .page04-left-img{
     width: 130px;
-    height: 40px;
+    height: 37px;
     margin-top: 20px;
   }
 
@@ -322,10 +324,14 @@
     position: absolute;
     background-color: white;
     border-radius: 4px;
-    border: 2px solid rgb(190, 187, 187);
-    box-shadow: 1px 1px 1px 1px #d8d8d8;
+    border: 1px solid rgb(190, 187, 187);
+    box-shadow: 1px 0px 1px 0px #d8d8d8;
     justify-content: start;
     padding-left: 10px;
+  }
+
+  .page04-left-button:hover{
+    transform: scale(1.01);
   }
 
   .page04-left-icon{
@@ -337,15 +343,18 @@
   .page04-left-title{
     width: 120px;
     margin-top: 55px; margin-left: -22px; 
+    font-size: 16.5px;
+    font-weight: bold;
     text-align: start;
     line-height: 20px;
-    color: #66678E; 
+    color: #44444b; 
   }
   .page04-left-learnmore{
     color: #0556F3;
-    font-weight: bold;
     margin-left: -120px;
+    font-weight: 500;
     margin-top: 190px;
+    font-size: 13.5px;
   }
   .page04-right-img{
       display: flex;
@@ -397,8 +406,8 @@
   }
 
   .footer-content1-input{
-    font-size: 15px;
-    width: 200px;
+    font-size: 16.5px;
+    width: 220px;
     height: 56.5px;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
@@ -419,7 +428,7 @@
   }
 
   .footer-content2{
-    width: 100px;
+    width: 130px;
     margin-left: 110px;
   }
 
@@ -441,10 +450,11 @@
     margin-left: -38px;
     line-height: 35px;
   }
-  a{
+  .link-node{
     color: white;
     text-decoration: none;
-    opacity: 70%;
+    opacity: 80%;
+    font-size: 14.5px;
   }
 
   .footer-contact{
@@ -463,4 +473,13 @@
   }
   .footer-contact-icon{
     width: 20px;
+  }
+  .footer-contact-line{
+    background-color: #e2e0e056;
+  }
+  .footer-contact-noCopy{
+    display: flex; 
+    position: absolute;
+    font-size: 15px;
+    color: #fffffff6;
   }
