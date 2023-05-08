@@ -23,3 +23,15 @@ function HidenVsShow() {
         }
     }
 }
+
+
+function HidenVsShow_BtnPage03() {
+    for (var i = 0; i < 7; i++) {
+        var x = document.getElementById("BtnPage03" + "_" + i);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+}

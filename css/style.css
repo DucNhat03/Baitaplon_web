@@ -63,7 +63,7 @@
         font-family: Arial;
         background-color: white;
         z-index: 1000;
-        box-shadow: 3px 3px #d8d0d0;
+        box-shadow: 1px 0px 1px 1px #eeeded;
     }
     
     .sticky {
@@ -118,7 +118,7 @@
         height: 410px;
         display: flex;
         justify-content: center;
-        margin-top: 200px;
+        margin-top: 00px;
         margin-left: -400px;
     }
     
@@ -306,13 +306,17 @@
         box-shadow: 1px 1px 1px 1px #d8d8d8;
     }
     
+    #BtnPage03 {
+        display: none;
+    }
+    
     #page04 {
         height: 600px;
         width: 100%;
         display: flex;
         position: absolute;
         justify-content: center;
-        margin-top: 1650px;
+        margin-top: 1850px;
     }
     
     .page04-left {
