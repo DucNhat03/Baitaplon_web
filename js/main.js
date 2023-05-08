@@ -11,3 +11,15 @@ function openLink1(hreff) {
 function reLoad() {
     return location.reload();
 }
+
+function HidenVsShow() {
+    for (var i = 0; i < 8; i++) {
+        let y = "myDIV" + i;
+        var x = document.getElementById(y);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+}

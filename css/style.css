@@ -82,7 +82,7 @@
     
     #nav-menu_gr-button {
         opacity: 95%;
-        top: 5px;
+        top: 10px;
         position: relative;
         margin-right: 400px;
         margin-left: 50px;
@@ -215,7 +215,8 @@
         height: 250px;
         width: 1340px;
         display: grid;
-        grid-template-columns: 23% 23% 23%;
+        grid-template-columns: 22% 22% 22%;
+        row-gap: 15px;
     }
     
     .page02-right_button {
@@ -223,7 +224,7 @@
         width: 250px;
         border-radius: 3px;
         border: 1px solid rgb(218, 211, 211);
-        font-size: 15px;
+        font-size: 17px;
         font-weight: 500;
         opacity: 90%;
         background-color: white;
@@ -246,7 +247,7 @@
         display: flex;
         position: absolute;
         justify-content: center;
-        margin-top: 600px;
+        margin-top: 700px;
         margin-left: -250px;
     }
     

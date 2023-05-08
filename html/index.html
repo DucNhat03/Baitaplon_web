@@ -57,13 +57,13 @@
 
         <script>
             window.onscroll = function() {
-                myFunction()
+                stickyNav()
             };
 
             var navbar = document.getElementById("nav-menu");
             var sticky = navbar.offsetTop;
 
-            function myFunction() {
+            function stickyNav() {
                 if (window.pageYOffset >= sticky) {
                     navbar.classList.add("sticky")
                 } else {
@@ -121,12 +121,36 @@
                     <div>
                         <button class="page02-right_button" onclick="openLink1('https://www.programiz.com/rust')" style="background-image: url(../Image/icon_PLanguages_RustP.png); ">Rust Programming</button>
                     </div>
+
                     <div>
                         <button class="page02-right_button" onclick="openLink1('https://www.programiz.com/golang')" style="background-image: url(../Image/icon_PLanguages_Go.png.png); ">Go Programming</button>
                     </div>
                     <div>
-                        <button class="page02-right_button" style="color: #0556f3; padding-left: 23px; font-size: 14px;">View all tutorials  <i class="fa-solid fa-arrow-right"></i> </button>
+                        <button class="page02-right_button" id="myDIV0" onclick="HidenVsShow()" style="color: #0556f3; padding-left: 23px; font-size: 14px; ">View all tutorials  <i class="fa-solid fa-arrow-right"></i> </button>
                     </div>
+                    <div>
+                        <button class="page02-right_button" id="myDIV1" onclick="openLink1('https://www.programiz.com/cpp-programming')" style="background-image: url(../Image/icon_PLanguages_C++.png);display: none;">C++ Programming</button>
+                    </div>
+                    <div>
+                        <button class="page02-right_button" id="myDIV2" onclick="openLink1('https://www.programiz.com/c-programming')" style="background-image: url(../Image/icon_PLanguages_C.png);display: none;">C Programming</button>
+                    </div>
+                    <div>
+                        <button class="page02-right_button" id="myDIV3" onclick="openLink1('https://www.programiz.com/dsa')" style="background-image: url(../Image/icon_PLanguages_DSA.png);display: none;">DS & Algorithms</button>
+                    </div>
+                    <div>
+                        <button class="page02-right_button" id="myDIV4" onclick="openLink1('https://www.programiz.com/swift-programming')" style="background-image: url(../Image/icon_PLanguages_SP.png);display: none;">Swift Programming</button>
+                    </div>
+                    <div>
+                        <button class="page02-right_button" id="myDIV5" onclick="openLink1('https://www.programiz.com/csharp-programming')" style="background-image: url(../Image/icon_PLanguages_Cthang.png); display: none;">C# Programming</button>
+                    </div>
+                    <div>
+                        <button class="page02-right_button" id="myDIV6" onclick="openLink1('https://www.programiz.com/kotlin-programming')" style="background-image: url(../Image/icon_PLanguages_K.png);display: none;">Koltin Programming</button>
+                    </div>
+                    <div>
+                        <button class="page02-right_button" id="myDIV7" onclick="HidenVsShow()" style="color: #0556f3; padding-left: 23px; font-size: 14px; display: none;">View fewer tutorials  <i class="fa-solid fa-arrow-right"></i> </button>
+                    </div>
+
+
                 </div>
             </div>
 
