@@ -1,3 +1,4 @@
+
 //Open link in new tab
 function openLink(hreff) {
     // return location.href = hreff;
@@ -9,9 +10,11 @@ function openLink1(hreff) {
 }
 //Reload myweb
 function reLoad() {
-    return location.reload();
+    window.scrollTo(0,0)
+    location.reload();
 }
 
+//Hiden and show when click button
 function HidenVsShow() {
     for (var i = 0; i < 8; i++) {
         let y = "myDIV" + i;
@@ -24,7 +27,7 @@ function HidenVsShow() {
     }
 }
 
-
+//Hiden and show when click button
 function HidenVsShow_BtnPage03() {
     for (var i = 0; i < 7; i++) {
         var x = document.getElementById("BtnPage03" + "_" + i);
@@ -35,3 +38,4 @@ function HidenVsShow_BtnPage03() {
         }
     }
 }
+
